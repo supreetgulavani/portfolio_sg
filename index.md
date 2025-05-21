@@ -20,3 +20,11 @@ title: Home
     <li>LinkedIn: <a href="https://linkedin.com/in/supreetgulavani">supreetgulavani</a></li>
   </ul>
 </div>
+
+## Projects
+
+<ul>
+  <li><strong>Project 1:</strong> RTL Verification Framework — Built a reusable testbench for chip simulation.</li>
+  <li><strong>Project 2:</strong> Personal Portfolio Website — Built with Jekyll and GitHub Pages.</li>
+  <li><strong>Project 3:</strong> [Add your own projects here]</li>
+</ul>

@@ -50,3 +50,19 @@ footer {
   color: #777;
   font-size: 0.9rem;
 }
+
+.social-links {
+  margin-bottom: 0.5rem;
+}
+
+.social-links a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0077b5; /* LinkedIn blue for hover or pick your favorite */
+}
