@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="hero">
-  <img src="/assets/images/profile.jpg" alt="Supreet Gulavani" class="profile-pic" />
+  <img src="{{ site.baseurl }}/assets/images/profile.jpg" alt="Supreet Gulavani" class="profile-pic" />
   <h2>Hello, I'm Supreet Gulavani 👋</h2>
   <p>Welcome to my portfolio website built with Jekyll!</p>
 </div>

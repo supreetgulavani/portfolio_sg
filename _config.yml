@@ -1,0 +1,21 @@
+title: Supreet Gulavani
+email: sgsupreetgulavani@gmail.com
+description: >- # this means to fold newlines to spaces
+  Personal portfolio website for Supreet Gulavani built with Jekyll and hosted on GitHub Pages.
+baseurl: "/portfolio_sg" # the subpath of your site, e.g. /portfolio_sg
+url: "https://supreetgulavani.github.io" # the base hostname & protocol for your site
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle

@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+  <link rel="icon" href="{{ site.baseurl }}/assets/images/profile.jpg" />
+  {% seo %}
 </head>
 <body>
   <header>
-    <h1>Supreet Gulavani</h1>
-    <nav>
-  <a href="/">Home</a> |
-  <a href="/about/">About</a>
-</nav>
-
+    <nav class="navbar">
+      <a class="logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <ul class="nav-links">
+        <li><a href="{{ site.baseurl }}/about/">About</a></li>
+        <li><a href="{{ site.baseurl }}/projects/">Projects</a></li>
+        <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -21,14 +26,14 @@
   </main>
 
   <footer>
-    <div class="social-links">
-    <a href="mailto:sgsupreetgulavani@gmail.com" aria-label="Email">✉️</a>
-    <a href="https://github.com/supreetgulavani" aria-label="GitHub" target="_blank" rel="noopener">🐙</a>
-    <a href="https://linkedin.com/in/supreetgulavani" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a>
-  </div>
-  <p>&copy; 2025 Supreet Gulavani</p>
-</footer>
-
-  </footer>
-</body>
-</html>
+    <div class="footer-content">
+      <p>Connect with me:</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/supreetgulavani" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/supreetgulavani" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:sgsupreetgulavani@gmail.com">Email</a></li>
+        <!-- Add more social links here -->
+      </ul>
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    </div>
+  </
